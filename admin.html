@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Area</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <script src="admin-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Area</h1>
+    </header>
+    <main>
+        <section id="manage-people">
+            <h2>Manage People</h2>
+            <div id="people-list">
+                <!-- People will be dynamically added here -->
+            </div>
+            <button id="add-person">Add Person</button>
+        </section>
+        <section id="manage-mod-packs">
+            <h2>Manage Mod-Packs, Servers, and Terrains</h2>
+            <div id="mod-pack-list">
+                <!-- Mod-Packs will be dynamically added here -->
+            </div>
+            <button id="add-mod-pack">Add Mod-Pack</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Admin Area. All rights reserved.</p>
+    </footer>
+
+    <!-- Dialogs for adding, removing, and modifying items -->
+    <div id="dialog-add-person" class="dialog">
+        <h3>Add Person</h3>
+        <form id="add-person-form">
+            <label for="person-name">Name:</label>
+            <input type="text" id="person-name" name="person-name" required>
+            <label for="person-role">Role:</label>
+            <input type="text" id="person-role" name="person-role" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div id="dialog-add-mod-pack" class="dialog">
+        <h3>Add Mod-Pack</h3>
+        <form id="add-mod-pack-form">
+            <label for="mod-pack-name">Name:</label>
+            <input type="text" id="mod-pack-name" name="mod-pack-name" required>
+            <label for="mod-pack-description">Description:</label>
+            <textarea id="mod-pack-description" name="mod-pack-description" required></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Basic styles for the header, main content area, and footer */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for the people management section */
+#manage-people {
+    margin-bottom: 2rem;
+}
+
+#people-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.person-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the mod-packs, servers, and terrains management section */
+#manage-mod-packs {
+    margin-bottom: 2rem;
+}
+
+#mod-packs-list,
+#servers-list,
+#terrains-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mod-pack-item,
+.server-item,
+.terrain-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the dialogs for adding, removing, and modifying items */
+#dialogs {
+    display: none;
+}
+
+.dialog {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations and playful styles */
+header, footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.person-item,
+.mod-pack-item,
+.server-item,
+.terrain-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.person-item:hover,
+.mod-pack-item:hover,
+.server-item:hover,
+.terrain-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    gap: 1rem;
+}
+
+.dialog label {
+    font-weight: bold;
+}
+
+.dialog input,
+.dialog textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dialog button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog button:hover {
+    background-color: #45a049;
+}
+
+/* Animations and playful styles */
+header, footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.person-item, .mod-pack-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.person-item:hover, .mod-pack-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
