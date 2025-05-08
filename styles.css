@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -18,13 +18,22 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Styles for the community info section */
+#community-info {
+    margin-bottom: 2rem;
+}
+
+#community-info p {
+    line-height: 1.6;
 }
 
 /* Styles for the event display section */
@@ -70,7 +79,7 @@ footer {
 }
 
 #create-event button {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     padding: 0.5rem;
     border: none;
@@ -79,7 +88,7 @@ footer {
 }
 
 #create-event button:hover {
-    background-color: #45a049;
+    background-color: #a58e4e;
 }
 
 /* Styles for the admin area link */
@@ -89,7 +98,7 @@ footer {
 }
 
 #admin-link a {
-    color: #4CAF50;
+    color: #baa05a;
     text-decoration: none;
     font-weight: bold;
 }

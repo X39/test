@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Community Events</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admin.html">Admin Area</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="event-list">
+                <!-- Events will be dynamically added here -->
+            </div>
+        </section>
+        <section id="create-event">
+            <h2>Create a New Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Community. All rights reserved.</p>
+    </footer>
+</body>
+</html>

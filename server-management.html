@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Management</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <script src="admin-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Server Management</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin Home</a></li>
+                <li><a href="user-management.html">User Management</a></li>
+                <li><a href="server-management.html">Server Management</a></li>
+                <li><a href="terrain-management.html">Terrain Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-servers">
+            <h2>Manage Servers</h2>
+            <div id="servers-list">
+                <!-- Servers will be dynamically added here -->
+            </div>
+            <button id="add-server">Add Server</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Server Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Dialogs for adding, removing, and modifying items -->
+    <div id="dialog-add-server" class="dialog">
+        <h3>Add Server</h3>
+        <form id="add-server-form">
+            <label for="server-name">Name:</label>
+            <input type="text" id="server-name" name="server-name" required>
+            <label for="server-description">Description:</label>
+            <textarea id="server-description" name="server-description" required></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

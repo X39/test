@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain Management</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <script src="admin-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Terrain Management</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin Home</a></li>
+                <li><a href="user-management.html">User Management</a></li>
+                <li><a href="server-management.html">Server Management</a></li>
+                <li><a href="terrain-management.html">Terrain Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-terrains">
+            <h2>Manage Terrains</h2>
+            <div id="terrains-list">
+                <!-- Terrains will be dynamically added here -->
+            </div>
+            <button id="add-terrain">Add Terrain</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Terrain Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Dialogs for adding, removing, and modifying items -->
+    <div id="dialog-add-terrain" class="dialog">
+        <h3>Add Terrain</h3>
+        <form id="add-terrain-form">
+            <label for="terrain-name">Name:</label>
+            <input type="text" id="terrain-name" name="terrain-name" required>
+            <label for="terrain-description">Description:</label>
+            <textarea id="terrain-description" name="terrain-description" required></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

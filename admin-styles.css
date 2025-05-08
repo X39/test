@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -18,7 +18,7 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -126,7 +126,7 @@ header, footer {
 }
 
 .dialog button {
-    background-color: #4CAF50;
+    background-color: #baa05a;
     color: white;
     padding: 0.5rem;
     border: none;
@@ -135,7 +135,7 @@ header, footer {
 }
 
 .dialog button:hover {
-    background-color: #45a049;
+    background-color: #a58e4e;
 }
 
 /* Animations and playful styles */

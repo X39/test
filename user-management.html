@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <script src="admin-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>User Management</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin Home</a></li>
+                <li><a href="user-management.html">User Management</a></li>
+                <li><a href="server-management.html">Server Management</a></li>
+                <li><a href="terrain-management.html">Terrain Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-users">
+            <h2>Manage Users</h2>
+            <div id="users-list">
+                <!-- Users will be dynamically added here -->
+            </div>
+            <button id="add-user">Add User</button>
+        </section>
+        <section id="manage-roles">
+            <h2>Manage Roles</h2>
+            <div id="roles-list">
+                <!-- Roles will be dynamically added here -->
+            </div>
+            <button id="add-role">Add Role</button>
+        </section>
+        <section id="manage-permissions">
+            <h2>Manage Permissions</h2>
+            <div id="permissions-list">
+                <!-- Permissions will be dynamically added here -->
+            </div>
+            <button id="add-permission">Add Permission</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 User Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Dialogs for adding, removing, and modifying items -->
+    <div id="dialog-add-user" class="dialog">
+        <h3>Add User</h3>
+        <form id="add-user-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name" required>
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div id="dialog-add-role" class="dialog">
+        <h3>Add Role</h3>
+        <form id="add-role-form">
+            <label for="role-name">Name:</label>
+            <input type="text" id="role-name" name="role-name" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div id="dialog-add-permission" class="dialog">
+        <h3>Add Permission</h3>
+        <form id="add-permission-form">
+            <label for="permission-name">Name:</label>
+            <input type="text" id="permission-name" name="permission-name" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTerrainButton = document.getElementById('add-terrain');
     const dialogs = document.getElementById('dialogs');
 
+    // Mock data arrays
+    const people = [];
+    const modPacks = [];
+    const servers = [];
+    const terrains = [];
+
     // Handle people management actions
     addPersonButton.addEventListener('click', () => {
         const personItem = document.createElement('div');
@@ -18,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Details about the person</p>
         `;
         peopleList.appendChild(personItem);
+        people.push({ name: 'New Person', details: 'Details about the person' });
     });
 
     // Handle mod-packs, servers, and terrains management actions
@@ -29,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Details about the mod-pack</p>
         `;
         modPacksList.appendChild(modPackItem);
+        modPacks.push({ name: 'New Mod-Pack', details: 'Details about the mod-pack' });
     });
 
     addServerButton.addEventListener('click', () => {
@@ -39,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Details about the server</p>
         `;
         serversList.appendChild(serverItem);
+        servers.push({ name: 'New Server', details: 'Details about the server' });
     });
 
     addTerrainButton.addEventListener('click', () => {
@@ -49,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Details about the terrain</p>
         `;
         terrainsList.appendChild(terrainItem);
+        terrains.push({ name: 'New Terrain', details: 'Details about the terrain' });
     });
 
     // Handle dialogs for adding, removing, and modifying items
